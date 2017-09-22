@@ -7,7 +7,7 @@
     "test": "clear && babel-node test/index.js | tap -R dot -",
     "build": "npm run clean && babel src -d dist",
     "docs:serve": "documentation serve -w src/",
-    "docs:build": "documentation build src/Trie.js -f html -o docs",
+    "docs:build": "documentation build src/Trie.js -f html -o .",
     "clean": "rm -rf dist .nyc_output coverage *.tgz",
     "version": "npm run clean:results && npm run docs:build && npm run bench && git add benchmark/results docs",
     "prepack": "npm run build",
